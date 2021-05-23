@@ -1,0 +1,187 @@
+{
+	"info": {
+		"_postman_id": "aaf5ddb0-c565-41de-bd60-f2ba14caea7c",
+		"name": "Gateways",
+		"description": "Musala soft task",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Peripheral Device - List",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:1337/peripheraldevice",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "1337",
+					"path": [
+						"peripheraldevice"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Peripheral Device - Get",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:1337/peripheraldevice/10",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "1337",
+					"path": [
+						"peripheraldevice",
+						"10"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Peripheral Device - Create",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"uid\": 111,\r\n    \"vendor\": \"vendor1\",\r\n    \"status\": \"online\",\r\n    \"gateway\": 61\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:1337/peripheraldevice",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "1337",
+					"path": [
+						"peripheraldevice"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Peripheral Device - Delete",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:1337/peripheraldevice/10",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "1337",
+					"path": [
+						"peripheraldevice",
+						"10"
+					]
+				},
+				"description": "Need to add a valid id request."
+			},
+			"response": []
+		},
+		{
+			"name": "Gateway - List",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:1337/gateway",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "1337",
+					"path": [
+						"gateway"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Gateway - Get",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:1337/gateway/10",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "1337",
+					"path": [
+						"gateway",
+						"10"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Gateway - Create",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Awesome Gateway\",\r\n    \"ipAddress\": \"12.0.0.1\",\r\n    \"serialNumber\": \"serialABC123\",\r\n    \"devices\": [ ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:1337/gateway",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "1337",
+					"path": [
+						"gateway"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Gateway - Delete",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:1337/gateway/10",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "1337",
+					"path": [
+						"gateway",
+						"10"
+					]
+				},
+				"description": "Need to add a valid id in request."
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
