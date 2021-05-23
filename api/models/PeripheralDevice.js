@@ -38,5 +38,19 @@ module.exports = {
 
   },
 
+  beforeCreate: async (valuesToSet, proceed) => {
+    const maxDevices = sails.config.globals.maxDevicesPerGateway;
+
+    let gatewayId = valuesToSet.gateway;
+    if (gatewayId) {
+      let gateway = await Gateway.findOne({ id: gatewayId }).populate('devices');
+
+      if (gateway && gateway.devices.length === maxDevices) {
+        return proceed(new Error(`Maximum allowed devices is ${maxDevices}.`));
+      }
+    }
+
+    return proceed();
+  }
 };
 

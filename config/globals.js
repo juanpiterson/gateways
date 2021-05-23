@@ -49,4 +49,7 @@ module.exports.globals = {
 
   sails: true,
 
+  // Custom global config
+  maxDevicesPerGateway: 10,
+
 };
