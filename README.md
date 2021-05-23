@@ -17,14 +17,13 @@ To install please follow these steps:
 1. git clone https://github.com/juanpiterson/gateways.git
 2. cd gateways
 3. npm install
-4. sails lift
+4. **npm start**
 
 ### How to use
 1 - You can start the app by running one of these commands.
 
-* **sails lift**
+* **npm start**
 * node app.js
-* npm start
 * yarn start
 
 2 - Press `Ctrl + c` at any moment to stop the execution.
