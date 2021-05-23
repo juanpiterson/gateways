@@ -1,26 +1,32 @@
-# gateways
+# Gateways
 
 a [Sails v1](https://sailsjs.com) application
 
+This is a sample project for managing gateways - master devices that control multiple peripheral
+devices.
 
-### Links
+### Requirements
++ Node.js ^14.15
 
-+ [Sails framework documentation](https://sailsjs.com/get-started)
-+ [Version notes / upgrading](https://sailsjs.com/documentation/upgrading)
-+ [Deployment tips](https://sailsjs.com/documentation/concepts/deployment)
-+ [Community support options](https://sailsjs.com/support)
-+ [Professional / enterprise options](https://sailsjs.com/enterprise)
+### Installation
+To install please follow the steps:
+
+1. git clone https://github.com/juanpiterson/gateways.git
+2. cd gateways
+3. npm install
+4. sails lift
+
+### How to use
+You can start the app by running one of these commands.
+
+* sails lift
+* node app.js
+* npm start
+* yarn start
+
+After application start, you should be able to see something like:
+
+![app lifted](https://photos.google.com/share/AF1QipOBq4T2M4tRIEO3iDsbfaK-Ghpp22uVH49cDiD1BwF--25nH13b7ZkwvvwXisDeYg/photo/AF1QipPmBatSwrhCInxyKhEtG6ZXTLlj6kPMyRONlNMd?key=dFN4blJXQTI4MHFsS252Z1lmNTkzZGJyTEMxMlV3)
 
 
-### Version info
-
-This app was originally generated on Fri May 21 2021 17:25:58 GMT-0400 (hora estándar de Paraguay) using Sails v1.4.3.
-
-<!-- Internally, Sails used [`sails-generate@2.0.3`](https://github.com/balderdashy/sails-generate/tree/v2.0.3/lib/core-generators/new). -->
-
-
-
-<!--
-Note:  Generators are usually run using the globally-installed `sails` CLI (command-line interface).  This CLI version is _environment-specific_ rather than app-specific, thus over time, as a project's dependencies are upgraded or the project is worked on by different developers on different computers using different versions of Node.js, the Sails dependency in its package.json file may differ from the globally-installed Sails CLI release it was originally generated with.  (Be sure to always check out the relevant [upgrading guides](https://sailsjs.com/upgrading) before upgrading the version of Sails used by your app.  If you're stuck, [get help here](https://sailsjs.com/support).)
--->
-
+Under **./postman** directory you will find a postman collection with some basic queries examples.

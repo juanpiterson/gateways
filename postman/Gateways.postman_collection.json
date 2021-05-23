@@ -52,7 +52,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"uid\": 111,\r\n    \"vendor\": \"vendor1\",\r\n    \"status\": \"online\",\r\n    \"gateway\": 61\r\n}",
+					"raw": "{\r\n    \"uid\": 111,\r\n    \"vendor\": \"vendor1\",\r\n    \"status\": \"online\",\r\n    \"gateway\": 10\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -90,7 +90,7 @@
 						"10"
 					]
 				},
-				"description": "Need to add a valid id request."
+				"description": "Need to add a valid id in object request."
 			},
 			"response": []
 		},
@@ -178,7 +178,7 @@
 						"10"
 					]
 				},
-				"description": "Need to add a valid id in request."
+				"description": "Need to add a valid id in object request."
 			},
 			"response": []
 		}
