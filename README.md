@@ -26,7 +26,8 @@ You can start the app by running one of these commands.
 
 After application start, you should be able to see something like:
 
-![app lifted](https://github.com/juanpiterson/gateways/blob/master/doc/img/app-lifted.png)
+<img src="https://github.com/juanpiterson/gateways/blob/master/doc/img/app-lifted.png" width="400">
 
-
-Under **./postman** directory you will find a postman collection with some basic queries examples.
+There are some dummy data provided that is reloaded each time the app is started.
+You can use some postman queries provided as a collection under **./postman** directory, that can be imported.
+For delete and get items queries please provide valid ids. You can use the list queries to see the current data.
