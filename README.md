@@ -26,7 +26,7 @@ You can start the app by running one of these commands.
 
 After application start, you should be able to see something like:
 
-![app lifted](https://photos.google.com/share/AF1QipOBq4T2M4tRIEO3iDsbfaK-Ghpp22uVH49cDiD1BwF--25nH13b7ZkwvvwXisDeYg/photo/AF1QipPmBatSwrhCInxyKhEtG6ZXTLlj6kPMyRONlNMd?key=dFN4blJXQTI4MHFsS252Z1lmNTkzZGJyTEMxMlV3)
+![app lifted](https://github.com/juanpiterson/gateways/blob/master/doc/img/app-lifted.png)
 
 
 Under **./postman** directory you will find a postman collection with some basic queries examples.
