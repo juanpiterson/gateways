@@ -7,9 +7,12 @@ devices.
 
 ### Requirements
 + Node.js ^14.15
++ npm ^6.14.10
+
+Please make sure you have `port: 1337` available.
 
 ### Installation
-To install please follow the steps:
+To install please follow these steps:
 
 1. git clone https://github.com/juanpiterson/gateways.git
 2. cd gateways
@@ -17,17 +20,24 @@ To install please follow the steps:
 4. sails lift
 
 ### How to use
-You can start the app by running one of these commands.
+1 - You can start the app by running one of these commands.
 
-* sails lift
+* **sails lift**
 * node app.js
 * npm start
 * yarn start
 
-After application start, you should be able to see something like:
+2 - Press `Ctrl + c` at any moment to stop the execution.
+
+3 - After application start, you should be able to see something like:
 
 <img src="https://github.com/juanpiterson/gateways/blob/master/doc/img/app-lifted.png" width="400">
 
 There are some dummy data provided that is reloaded each time the app is started.
-You can use some postman queries provided as a collection under **./postman** directory, that can be imported.
-For delete and get items queries please provide valid ids. You can use the list queries to see the current data.
+You can use some postman queries provided as a collection under **./postman** directory.
+For **delete** and **get** items queries please provide valid ids. You can use **lists** queries to see the current data.
+
+For example:
+
+* GET, http://localhost:1337/peripheraldevice/
+* GET, http://localhost:1337/gateway
